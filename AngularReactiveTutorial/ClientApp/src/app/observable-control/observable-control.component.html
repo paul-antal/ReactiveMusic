@@ -1,0 +1,8 @@
+<div>
+  <app-observable [observable]="observable"></app-observable>
+
+  <input [(ngModel)]="nextVal">
+  <button (click)="observable.next(nextVal)">On next</button>
+  <button (click)="observable.complete()">On complete</button>
+  <button (click)="observable.error('Oups...I failed...')">On fail</button>
+</div>

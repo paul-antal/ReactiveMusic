@@ -1,0 +1,25 @@
+.observable{
+    background-color: ghostwhite;
+    display: flex;
+    min-height: 70px;
+    margin-bottom: 20px;
+}
+
+.event{
+    padding: 10px;
+    border-radius: 15px 15px;
+    margin: 10px;
+}
+
+.event.next{
+    background-color: skyblue;
+}
+
+.event.error{
+    background-color: indianred;
+
+}
+
+.event.completed{
+    background-color: greenyellow;
+}

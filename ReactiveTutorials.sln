@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularReactiveTutorial", "AngularReactiveTutorial\AngularReactiveTutorial.csproj", "{06824CD2-3727-471D-88C8-499621858FDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06824CD2-3727-471D-88C8-499621858FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06824CD2-3727-471D-88C8-499621858FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06824CD2-3727-471D-88C8-499621858FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06824CD2-3727-471D-88C8-499621858FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7194EFD-D75C-433D-BA61-92A3BFF62B6B}
+	EndGlobalSection
+EndGlobal
