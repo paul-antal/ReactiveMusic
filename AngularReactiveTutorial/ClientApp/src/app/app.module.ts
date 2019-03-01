@@ -7,8 +7,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ObservableComponent } from './observable/observable.component';
 import { ObservableControlComponent } from './observable-control/observable-control.component';
+import { ObservableSingleComponent } from './observable-single/observable-single.component';
+import { AudioPlayer } from './player/audio-player.service';
 @NgModule({
-    declarations: [AppComponent, HomeComponent, ObservableComponent, ObservableControlComponent],
+    declarations: [AppComponent, HomeComponent, ObservableComponent, ObservableControlComponent, ObservableSingleComponent],
     imports: [
         BrowserModule,
         FormsModule,
@@ -16,7 +18,7 @@ import { ObservableControlComponent } from './observable-control/observable-cont
             { path: '', component: HomeComponent, pathMatch: 'full' }
         ])
     ],
-    providers: [],
+    providers: [AudioPlayer],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

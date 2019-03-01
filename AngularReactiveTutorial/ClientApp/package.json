@@ -28,6 +28,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
+    "webaudiofont": "^2.5.47",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
