@@ -4,7 +4,7 @@ import { Subject } from 'rxjs';
 @Component({
   selector: 'app-observable-control',
   templateUrl: './observable-control.component.html',
-  styleUrls: ['./observable-control.component.css']
+  styleUrls: ['./observable-control.component.scss']
 })
 export class ObservableControlComponent implements OnInit {
 

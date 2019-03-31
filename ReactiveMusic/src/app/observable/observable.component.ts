@@ -5,7 +5,7 @@ import { catchError, finalize } from 'rxjs/operators';
 @Component({
     selector: 'app-observable',
     templateUrl: './observable.component.html',
-    styleUrls: ['./observable.component.css']
+    styleUrls: ['./observable.component.scss']
 })
 export class ObservableComponent implements OnInit, OnChanges {
 
@@ -27,6 +27,9 @@ export class ObservableComponent implements OnInit, OnChanges {
     }
 
     subscribe() {
+        if (!this.observable) {
+            return;
+        }
         this.subscription = this.observable.subscribe((value) => {
             this.events.push({
                 status: 'next',

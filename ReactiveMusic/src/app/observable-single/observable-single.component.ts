@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'app-observable-control',
-  templateUrl: './observable-control.component.html',
-  styleUrls: ['./observable-control.component.css']
+  selector: 'app-observable-single',
+  templateUrl: './observable-single.component.html',
+  styleUrls: ['./observable-single.component.scss']
 })
-export class ObservableControlComponent implements OnInit {
+export class ObservableSingleComponent implements OnInit {
 
   nextVal: number;
   @Input()
