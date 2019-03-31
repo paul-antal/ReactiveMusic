@@ -100,9 +100,12 @@ const song: INote[][] = [
 
 export class SongLibrary {
     static get song1(): INote[][] {
-        return song.map((note, i) => i % 2 === 0 ? note : []);
+        return song.map((note, i) => i % 3 === 0 ? note : []);
     }
     static get song2(): INote[][] {
-        return song.map((note, i) => i % 2 === 1 ? note : []);
+        return song.map((note, i) => i % 3 === 1 ? note : []);
+    }
+    static get song3(): INote[][] {
+        return song.map((note, i) => i % 3 === 2 ? note : []);
     }
 }

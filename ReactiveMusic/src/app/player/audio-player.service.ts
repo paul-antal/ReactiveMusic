@@ -15,7 +15,7 @@ export class AudioPlayer {
     }
     private band: any = {};
     constructor() {
-        const AudioContextFunc = this.AudioWindow.AudioContext || (<any>window).webkitAudioContext;
+        const AudioContextFunc = this.AudioWindow.AudioContext || (window as any).webkitAudioContext;
         this.audioContext = new AudioContextFunc();
         this.player = new WebAudioFontPlayer();
         const mainInfo = this.player.loader.instrumentInfo(this.instrumentIndex);
@@ -30,7 +30,7 @@ export class AudioPlayer {
         this.loadInstrument(snareInfo, () => this.band.snare = this.AudioWindow[snareInfo.variable]);
     }
 
-    play(notes: INote[]) {
+    play = (notes: INote[]) => {
         for (let i = 0; i < notes.length; i++) {
             if (notes[i]) {
                 const note = notes[i];
@@ -61,7 +61,7 @@ export class AudioPlayer {
     }
 
     private get AudioWindow(): IAudioWindow {
-        return <any>window;
+        return window as any;
     }
     private main(pitch: Pitch, duration: number) {
         this.playNote({

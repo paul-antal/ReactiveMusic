@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable ,  from ,  interval ,  Subject } from 'rxjs';
-import { zip, map, buffer, bufferCount, skip, take, merge } from 'rxjs/operators';
-import { AudioPlayer} from '../player/audio-player.service';
+import { Observable, from, interval, Subject, zip, merge } from 'rxjs';
+import { AudioPlayer } from '../player/audio-player.service';
+import { SongLibrary } from '../songs';
+import { map, take, skip } from 'rxjs/operators';
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
@@ -15,6 +16,6 @@ export class HomeComponent implements OnInit {
 
     }
     start() {
-        this.timer = interval(1000);
+
     }
 }
